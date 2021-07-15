@@ -9,48 +9,52 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "homepage": "https://danatey.github.io/goit-react-hw-02-feedback"
   },
-  "homepage": "https://danatey.github.io/goit-react-hw-02-feedback/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danatey/goit-react-hw-02-feedback.git"
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "eslint": "^7.30.0",
-    "gh-pages": "^3.2.3",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.0.1",
-    "prettier": "^2.3.2"
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
-  },
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "prepare": "husky install",
+      "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "eslint": "^7.30.0",
+      "gh-pages": "^3.2.3",
+      "husky": "^7.0.1",
+      "lint-staged": "^11.0.1",
+      "prettier": "^2.3.2"
+    },
+    "lint-staged": {
+      "*.js": "eslint --cache --fix",
+      "*.{js,css,md}": "prettier --write"
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   }
-}
