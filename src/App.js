@@ -1,11 +1,13 @@
-import './App.css';
+import "./App.css";
 
-import Section from './Components/Section';
+import Section from "./Components/Section";
 
 function App() {
-  return <>
-    <Section/>
-  </>
+  return (
+    <>
+      <Section />
+    </>
+  );
 }
 
 export default App;

@@ -1,10 +1,10 @@
-import FeedbackOptions from "../FeedbackOptions"
-import Statistics from "../Statistics"
+import StatisticCounter from "../StatisticCounter"
+
+import './Section.scss'
 
 const Section = () => {
     return <section>
-        <FeedbackOptions />
-        <Statistics />
+        <StatisticCounter />
     </section>
 }
 
