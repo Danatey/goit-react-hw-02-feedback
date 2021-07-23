@@ -1,11 +1,21 @@
-import StatisticCounter from "../StatisticCounter"
+import PropTypes from "prop-types"
 
 import './Section.scss'
 
-const Section = () => {
-    return <section>
-        <StatisticCounter />
-    </section>
-}
+const Section = ({ title, children }) => (
+  <section>
+    <h1>{title}</h1>
+    {children}
+  </section>
+);
+
+Section.defaultProps = {
+  title: '',
+};
+
+Section.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node,
+};
 
 export default Section

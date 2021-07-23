@@ -1,12 +1,26 @@
+import ProrTypes from 'prop-types'
+
 import './FeedbackOptions.scss'
 
-const FeedbackOptions = ({ onLeaveFeedback }) => {
-    return <div>
-        <h2>Please leave feedback</h2>
-        <button onClick={onLeaveFeedback}>Good</button>
-        <button onClick={onLeaveFeedback}>Neutral</button>
-        <button onClick={onLeaveFeedback}>Bad</button>
-    </div>
+const FeedbackOptions = ({ options, onLeaveFeedback }) => (
+  <div className="FeedbackOptions">
+    {options.map(({ btnName, id }) => {
+      return (
+        <button
+          key={id}
+          type="button"
+          onClick={onLeaveFeedback}
+        >{btnName}
+        </button>
+      );
+    })}
+  </div>
+);
+
+FeedbackOptions.prorTypes = {
+  onLeaveFeedback: ProrTypes.func,
+  id: ProrTypes.string,
+  options: ProrTypes.node,
 }
 
 export default FeedbackOptions

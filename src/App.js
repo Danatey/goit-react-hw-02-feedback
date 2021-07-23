@@ -1,11 +1,9 @@
-import "./App.css";
-
-import Section from "./Components/Section";
+import StatisticCounter from "./Components/StatisticCounter";
 
 function App() {
   return (
     <>
-      <Section />
+      <StatisticCounter />
     </>
   );
 }
